@@ -1,1 +1,32 @@
 // Navigation Styles here
+.navbar {
+    display: flex;
+    border-bottom: 2px dashed @navigation-border;
+    @media  @mobile {
+        flex-direction: column;
+    }
+  
+    .navbar-tag {
+        text-align: left;
+        margin-right: auto;
+    @media @mobile {
+        text-align: center;
+        margin:auto;
+    }
+    }
+    .navbar-nav {
+        margin-left: auto;
+        margin-top:1em;
+        @media @mobile {
+            text-align: center;
+            margin:auto;
+        }
+        a {
+            padding: 1em;
+			color: black;
+			text-align: center;
+			text-decoration: none;
+			font-size: 1.5em;
+        }
+    }
+}
